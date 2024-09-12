@@ -5,12 +5,13 @@ This is an not an bot but still automates the process of job applications on job
 When some question comes, it pauses and wait for you to annswer, also it saves that question and your answer for future use if that question repeated.
 Can apply 1000+ jobs in less than 1 hour.
 
-### Supported Sites:
+Supported Sites:
 Internshala
 
-### Future Plans:
+Future Plans:
 workdayjob,
-linkedin,etc
+linkedin,
+Naukari.com etc
 
 ## See it in Actio
 Watch the demo or use this link: https://drive.google.com/file/d/19ccDBbtMwf4kr-4gkqqqpMUZj4ro2LWG/view?usp=sharing
