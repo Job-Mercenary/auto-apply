@@ -11,7 +11,7 @@ workdayjob,
 linkedin,etc
 
 ## See it in Action
-https://drive.google.com/file/d/19ccDBbtMwf4kr-4gkqqqpMUZj4ro2LWG/view?usp=sharing
+(https://github.com/Job-Mercenary/guide/blob/de9cdbda1dfc538736e26194e43530f84d47263a/screen-capture%20(5).webm)
 Click on above image to watch the demo or use this link: https://drive.google.com/file/d/19ccDBbtMwf4kr-4gkqqqpMUZj4ro2LWG/view?usp=sharing
 
 ## How to install
