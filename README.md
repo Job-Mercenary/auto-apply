@@ -10,9 +10,8 @@ Internshala
 workdayjob,
 linkedin,etc
 
-## See it in Action
-https://github.com/Job-Mercenary/guide/blob/0ea804757e92d94034d266d59ea6709a24fcb2f9/screen-capture%20(5).mp4
-Click on above image to watch the demo or use this link: https://drive.google.com/file/d/19ccDBbtMwf4kr-4gkqqqpMUZj4ro2LWG/view?usp=sharing
+## See it in Actio
+Watch the demo or use this link: https://drive.google.com/file/d/19ccDBbtMwf4kr-4gkqqqpMUZj4ro2LWG/view?usp=sharing
 
 ## How to install
 No additional requirements, just clone it and select the cloned folder after load from Extension
