@@ -1,7 +1,9 @@
 # auto-apply
 An efficient extension that automates repetitive job application tasks.
 
-This is an  bot that automates the process of job applications on job platforms. It searches for jobs relevant to you, answers all questions in application form, customizes your cover letter based on the collected job information, such as skills required, description, about company, etc. and applies to the job.Can apply 100+ jobs in less than 1 hour.
+This is an not an bot but still automates the process of job applications on job platforms. It searches for jobs relevant to you, answers all questions in application form and applies to the job.
+When some question comes, it pauses and wait for you to annswer, also it saves that question and your answer for future use if that question repeated.
+Can apply 1000+ jobs in less than 1 hour.
 
 ### Supported Sites:
 Internshala
