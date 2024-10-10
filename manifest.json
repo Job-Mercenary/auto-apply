@@ -1,21 +1,28 @@
 {
   "name": "Job Mercenary: auto apply",
   "version": "1.0.0",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "description": "Streamline your job hunt with Job Mercenary—an efficient extension that automates repetitive application tasks",
-  "host_permissions": ["https://*.internshala.com/*"],
-  "permissions": ["storage", "tabs", "activeTab", "scripting"],
-  "background": {
-    "service_worker": "background.js"
-  },
+  "permissions": [
+    "https://*.internshala.com/*",
+    "storage",
+    "tabs",
+    "activeTab"
+  ],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
       "js": ["contentScript.js"]
     }
   ],
-  "action": {
-    "default_title": "Makes applying faster",
-    "default_popup": "index.html"
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "jobmercenary@example.com",
+      "strict_min_version": "89.0"
+    }
+  },
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Job Mercenary"
   }
 }

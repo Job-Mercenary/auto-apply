@@ -83,8 +83,7 @@ function handleInternshala() {
 
 function afterSubmitHandle() {
   setTimeout(() => {
-    document.querySelector("#backToInternshipsCta")?.click();
-    document.querySelector(".ic-16-s15-chevron-left")?.click();
+    document.querySelector("#dismiss_similar_job_modal")?.click();
     handleInternshala();
   }, 2000);
 }
