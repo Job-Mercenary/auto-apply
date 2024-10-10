@@ -22,31 +22,32 @@ document
   .getElementById("internshala")
   .addEventListener("click", handleInternshala);
 document
+  .getElementById("startInternshala")
+  .addEventListener("click", handleStartInternshala);
+document
   .getElementById("coverletterView")
   .addEventListener("click", handleCoverletterView);
 document
   .getElementById("coverletterUpdate")
   .addEventListener("click", handleCoverletterUpdate);
 
-  function handleInternshala() {
-    chrome.tabs.create(
-      { url: "https://internshala.com/internships/web-development-internship/ppo-true/" },
-      (newTab) => {
 
-        chrome.tabs.onUpdated.addListener(function listener(tabId, changeInfo, tab) {
-          if (tabId === newTab.id && changeInfo.status === "complete") {
-            chrome.tabs.sendMessage(newTab.id, {
-              type: "NEW",
-              handleInternshala: true,
-            });
-  
-            chrome.tabs.onUpdated.removeListener(listener);
-          }
-        });
-      }
-    );
-  }
-  
+function handleInternshala() {
+  window.open(
+    "https://internshala.com/internships/ppo-true/",
+    "_blank"
+  );
+}
+
+function handleStartInternshala() {
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    chrome.tabs.sendMessage(tabs[0].id, {
+      type: "NEW",
+      handleInternshala: true,
+    });
+  });
+}
+
 
 function handleCoverletterView() {
   loadData("coverLetter", (value) => {

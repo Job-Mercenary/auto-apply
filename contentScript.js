@@ -1,5 +1,5 @@
 function saveData(key, value) {
-  chrome.storage.local.set({ [key]: value }, () => {});
+  chrome.storage.local.set({ [key]: value }, () => { });
 }
 
 function loadData(key, callback) {
@@ -33,9 +33,9 @@ function handleInternshala() {
   }, 10);
 
   setTimeout(() => {
-    document.querySelector("#continue_button")?.click();
-    document.querySelector("#apply_now_button")?.click();
-    document.querySelector("#easy_apply_button")?.click();
+    document.getElementById("continue_button")?.click();
+    document.getElementById("apply_now_button")?.click();
+    document.getElementById("easy_apply_button")?.click();
   }, 2000);
 
   setTimeout(() => {
@@ -65,7 +65,7 @@ function handleInternshala() {
       });
     });
 
-    const submitButton = document.querySelector("#submit");
+    const submitButton = document.getElementById("submit");
     if (addQues.length === 0) {
       submitButton?.click();
       afterSubmitHandle();
@@ -83,7 +83,7 @@ function handleInternshala() {
 
 function afterSubmitHandle() {
   setTimeout(() => {
-    document.querySelector("#dismiss_similar_job_modal")?.click();
+    document.getElementById("dismiss_similar_job_modal")?.click();
     handleInternshala();
   }, 2000);
 }
