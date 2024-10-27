@@ -25,6 +25,9 @@ document
   .getElementById("startInternshala")
   .addEventListener("click", handleStartInternshala);
 document
+  .getElementById("stopInternshala")
+  .addEventListener("click", handleStopInternshala);
+document
   .getElementById("coverletterView")
   .addEventListener("click", handleCoverletterView);
 document
@@ -45,7 +48,12 @@ function handleStartInternshala() {
       type: "NEW",
       handleInternshala: true,
     });
+    chrome.storage.local.set({ runOnReload: true });
   });
+}
+
+function handleStopInternshala() {
+  chrome.storage.local.set({ runOnReload: false });
 }
 
 

@@ -18,6 +18,12 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   }
 });
 
+chrome.storage.local.get("runOnReload", (data) => {
+  if (data.runOnReload) {
+    handleInternshala();
+  }
+});
+
 function handleInternshala() {
   let coverLetter = ``;
   let memo = {};
